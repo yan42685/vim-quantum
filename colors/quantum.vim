@@ -50,8 +50,8 @@ endfun
 call s:HL('ColorColumn',                    '',         s:gray2,    '')
 call s:HL('Cursor',                         s:gray2,    s:gray5,    '')
 call s:HL('CursorColumn',                   '',         s:gray2,    '')
-call s:HL('CursorLine',                     '',         s:gray2,    'none')
-call s:HL('CursorLineNr',                   s:cyan,     s:gray2,    'none')
+hi CursorLine guibg=none
+hi CursorLineNr guibg=none
 call s:HL('Directory',                      s:blue,     '',         '')
 call s:HL('DiffAdd',                        s:green,    s:gray2,    'none')
 call s:HL('DiffChange',                     s:yellow,   s:gray2,    'none')
@@ -67,6 +67,7 @@ call s:HL('ModeMsg',                        s:green,    '',         '')
 call s:HL('MoreMsg',                        s:green,    '',         '')
 call s:HL('NonText',                        s:gray4,    '',         'none')
 " call s:HL('Normal',                         s:gray5,    s:gray1,    'none')
+" 透明模式的关键
 call s:HL('Normal',                         s:gray5,    'none',    'none')
 call s:HL('Pmenu',                          s:gray5,    s:gray3,    '')
 call s:HL('PmenuSbar',                      '',         s:gray2,    '')
