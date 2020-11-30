@@ -108,7 +108,7 @@ call s:HL('Structure',                      s:cyan,     '',         '')
 call s:HL('Special',                        s:indigo,   '',         '')
 call s:HL('Underlined',                     s:blue,     '',         'none')
 call s:HL('Error',                          s:red,      s:gray1,    'bold')
-call s:HL('Todo',                           s:orange,   'none,    'bold')
+call s:HL('Todo',                           s:orange,   'none',    'bold')
 
 " CSS
 call s:HL('cssAttrComma',                   s:gray5,    '',         '')
