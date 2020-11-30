@@ -51,7 +51,7 @@ call s:HL('ColorColumn',                    '',         s:gray2,    '')
 call s:HL('Cursor',                         s:gray2,    s:gray5,    '')
 call s:HL('CursorColumn',                   '',         s:gray2,    '')
 hi CursorLine guibg=none
-hi CursorLineNr guibg=none
+call s:HL('CursorLineNr',                   s:cyan,     'none',    'none')
 call s:HL('Directory',                      s:blue,     '',         '')
 call s:HL('DiffAdd',                        s:green,    s:gray2,    'none')
 call s:HL('DiffChange',                     s:yellow,   s:gray2,    'none')
