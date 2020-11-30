@@ -66,7 +66,8 @@ call s:HL('MatchParen',                     s:gray4,    s:cyan,     'bold')
 call s:HL('ModeMsg',                        s:green,    '',         '')
 call s:HL('MoreMsg',                        s:green,    '',         '')
 call s:HL('NonText',                        s:gray4,    '',         'none')
-call s:HL('Normal',                         s:gray5,    s:gray1,    'none')
+" call s:HL('Normal',                         s:gray5,    s:gray1,    'none')
+call s:HL('Normal',                         s:gray5,    'none',    'none')
 call s:HL('Pmenu',                          s:gray5,    s:gray3,    '')
 call s:HL('PmenuSbar',                      '',         s:gray2,    '')
 call s:HL('PmenuSel',                       s:gray2,    s:cyan,     '')
@@ -221,12 +222,6 @@ call s:HL('sassVariable',                   s:purple,   '',         '')
 call s:HL('diffAdded',                      s:green,    '',         '')
 call s:HL('diffRemoved',                    s:red,      '',         '')
 
-" Vim-Gittgutter
-call s:HL('GitGutterAdd',                   s:green,    '',         '')
-call s:HL('GitGutterChange',                s:yellow,   '',         '')
-call s:HL('GitGutterChangeDelete',          s:orange,   '',         '')
-call s:HL('GitGutterDelete',                s:red,      '',         '')
-
 " Vim-Signify
 hi link SignifySignAdd GitGutterAdd
 hi link SignifySignChange GitGutterChange
@@ -238,24 +233,21 @@ call s:HL('xmlEndTag',                      s:blue,     '',         '')
 call s:HL('xmlTag',                         s:blue,     '',         '')
 call s:HL('xmlTagName',                     s:blue,     '',         '')
 
-" Neovim terminal colors
-if has('nvim')
-    let g:terminal_color_0 = s:gray1
-    let g:terminal_color_1 = s:red
-    let g:terminal_color_2 = s:green
-    let g:terminal_color_3 = s:yellow
-    let g:terminal_color_4 = s:blue
-    let g:terminal_color_5 = s:purple
-    let g:terminal_color_6 = s:cyan
-    let g:terminal_color_7 = s:gray5
-    let g:terminal_color_8 = s:gray3
-    let g:terminal_color_9 = s:red
-    let g:terminal_color_10 = s:green
-    let g:terminal_color_11 = s:yellow
-    let g:terminal_color_12 = s:blue
-    let g:terminal_color_13 = s:purple
-    let g:terminal_color_14 = s:cyan
-    let g:terminal_color_15 = s:gray4
-    let g:terminal_color_background = g:terminal_color_0
-    let g:terminal_color_foreground = g:terminal_color_7
-endif
+let g:terminal_color_0 = s:gray1
+let g:terminal_color_1 = s:red
+let g:terminal_color_2 = s:green
+let g:terminal_color_3 = s:yellow
+let g:terminal_color_4 = s:blue
+let g:terminal_color_5 = s:purple
+let g:terminal_color_6 = s:cyan
+let g:terminal_color_7 = s:gray5
+let g:terminal_color_8 = s:gray3
+let g:terminal_color_9 = s:red
+let g:terminal_color_10 = s:green
+let g:terminal_color_11 = s:yellow
+let g:terminal_color_12 = s:blue
+let g:terminal_color_13 = s:purple
+let g:terminal_color_14 = s:cyan
+let g:terminal_color_15 = s:gray4
+let g:terminal_color_background = g:terminal_color_0
+let g:terminal_color_foreground = g:terminal_color_7
