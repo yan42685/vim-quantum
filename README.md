@@ -1,7 +1,7 @@
 # Quantum
 
-## NOTE 
-这是fork版本，只用于透明模式
+## NOTE: 这是fork版本，只用于透明模式
+
 
 A color scheme based on Google's [Material Design palette](https://material.io/guidelines/style/color.html#color-color-palette).
 
