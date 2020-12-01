@@ -18,7 +18,8 @@ if(exists("g:lightline"))
 
     let s:p.normal.left = [ [ s:gray2, s:blue ], [ s:gray5, s:gray3 ] ]
     let s:p.normal.right = [ [ s:gray2, s:blue ], [ s:gray5, s:gray3 ] ]
-    let s:p.normal.middle = [ [ s:gray4, s:gray2 ] ]
+    " let s:p.normal.middle = [ [ s:gray4, s:gray2 ] ]
+    let s:p.normal.middle = [ [ s:gray4, 'none' ] ]
     let s:p.normal.error = [ [ s:gray2, s:red ] ]
     let s:p.normal.warning = [ [ s:gray2, s:yellow ] ]
 
@@ -33,11 +34,14 @@ if(exists("g:lightline"))
 
     let s:p.inactive.left =  [ [ s:gray5, s:gray3 ], [ s:gray4, s:gray2 ] ]
     let s:p.inactive.right = [ [ s:gray5, s:gray3 ], [ s:gray4, s:gray2 ] ]
-    let s:p.inactive.middle = [ [ s:gray4, s:gray2 ] ]
+    " let s:p.inactive.middle = [ [ s:gray4, s:gray2 ] ]
+    let s:p.inactive.middle = [ [ s:gray4, 'none' ] ]
 
     let s:p.tabline.left = [ [ s:gray5, s:gray3 ] ]
-    let s:p.tabline.middle = [ [ s:gray4, s:gray2 ] ]
-    let s:p.tabline.right = [ [ s:gray2, s:blue ] ]
+    " let s:p.tabline.middle = [ [ s:gray4, s:gray2 ] ]
+    let s:p.tabline.middle = [ [ s:gray4, 'none' ] ]
+    " let s:p.tabline.right = [ [ s:gray2, s:blue ] ]
+    let s:p.tabline.right = [ [ s:gray2, 'none' ] ]
     let s:p.tabline.tabsel = [ [ s:gray2, s:blue ] ]
 
     let g:lightline#colorscheme#quantum#palette = lightline#colorscheme#fill(s:p)
