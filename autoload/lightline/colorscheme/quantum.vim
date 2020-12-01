@@ -19,7 +19,7 @@ if(exists("g:lightline"))
     let s:p.normal.left = [ [ s:gray2, s:blue ], [ s:gray5, s:gray3 ] ]
     let s:p.normal.right = [ [ s:gray2, s:blue ], [ s:gray5, s:gray3 ] ]
     " let s:p.normal.middle = [ [ s:gray4, s:gray2 ] ]
-    let s:p.normal.middle = [ [ s:gray4, 'none' ] ]
+    let s:p.normal.middle = [ [ 'none', 'none' ] ]
     let s:p.normal.error = [ [ s:gray2, s:red ] ]
     let s:p.normal.warning = [ [ s:gray2, s:yellow ] ]
 
